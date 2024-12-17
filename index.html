@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="drawer">
+      <div class="menu_toggle"><span></span></div>
+      <div class="navigation">
+        <ul class="menu">
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+              
+              <span class="text">profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="videocam-outline"></ion-icon></span>
+              <span class="text">videos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="card-outline"></ion-icon></span>
+              <span class="text">revenue</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+              <span class="text">setting</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+              <span class="text">support</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+              <span class="text">logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      const menu_toggle=document.querySelector('.menu_toggle');
+      const navigation = document.querySelector('.navigation');
+      menu_toggle.onclick = function(){
+        navigation.classList.toggle('active')
+        menu_toggle.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
